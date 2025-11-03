@@ -53,7 +53,7 @@ TWELVE_DATA_API_KEY=your_api_key_here
 ```
 
 
-## Usage with VS Code and Claude Desktop
+## Usage with VS Code
 
 This MCP server is designed to work seamlessly with VS Code (via GitHub Copilot). Here's how to set it up:
 
