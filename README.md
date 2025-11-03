@@ -55,7 +55,7 @@ TWELVE_DATA_API_KEY=your_api_key_here
 
 ## Usage with VS Code and Claude Desktop
 
-This MCP server is designed to work seamlessly with VS Code (via GitHub Copilot) and Claude Desktop. Here's how to set it up:
+This MCP server is designed to work seamlessly with VS Code (via GitHub Copilot). Here's how to set it up:
 
 ### VS Code Setup
 
@@ -90,22 +90,6 @@ Now you can use natural language in Copilot Chat to analyze stocks:
 /compare AAPL and MSFT for the last 60 days
 /portfolio optimize AAPL, MSFT, GOOGL using risk parity
 ```
-
-### Claude Desktop Usage
-
-1. Start the MCP server as above
-2. In Claude Desktop settings, enable MCP integrations
-3. Add the stock comparison server:
-   - Name: Stock Analysis
-   - Port: 8080 (default)
-   - Capabilities: stock comparison, portfolio optimization
-
-Now you can ask Claude to:
-- "Compare Tesla and Apple's performance"
-- "Create an optimal portfolio from top tech stocks"
-- "Show me the correlation between MSFT and GOOGL"
-
-Claude will automatically use the MCP server to fetch and analyze the data.
 
 ## Cache Configuration
 
