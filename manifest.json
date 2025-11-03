@@ -1,0 +1,105 @@
+{
+  "name": "stock-comparison",
+  "version": "1.0.0",
+  "description": "Stock comparison and analysis MCP server using Twelve Data API",
+  "author": "Your Name",
+  "license": "MIT",
+  "main": "server.py",
+  "mcp": {
+    "version": "1.0.0",
+    "capabilities": {
+      "resources": true,
+      "tools": true,
+      "prompts": false
+    }
+  },
+  "runtime": {
+    "type": "python",
+    "version": ">=3.8",
+    "entry": "server.py"
+  },
+  "dependencies": {
+    "mcp": ">=1.0.0",
+    "requests": ">=2.31.0"
+  },
+  "configuration": {
+    "required": [],
+    "optional": [
+      {
+        "name": "TWELVE_DATA_API_KEY",
+        "type": "string",
+        "description": "API key for Twelve Data service",
+        "default": null
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "compare_stocks",
+      "description": "Compare multiple stock symbols with detailed analysis including performance metrics and trends",
+      "parameters": {
+        "symbols": {
+          "type": "array",
+          "required": true,
+          "description": "List of stock ticker symbols"
+        },
+        "interval": {
+          "type": "string",
+          "required": false,
+          "description": "Time interval (e.g., 1day, 1week)"
+        },
+        "outputsize": {
+          "type": "integer",
+          "required": false,
+          "description": "Number of data points to retrieve"
+        }
+      }
+    },
+        {
+      "name": "hierarchical_risk_parity_portfolio",
+      "description": "Construct a hierarchical risk parity portfolio, using Scipy hierarchical clustering.",
+      "parameters": {
+        "symbols": {
+          "type": "array",
+          "required": true,
+          "description": "List of stock ticker symbols"
+        },
+        "interval": {
+          "type": "string",
+          "required": false,
+          "description": "Time interval (e.g., 1day, 1week)"
+        },
+        "outputsize": {
+          "type": "integer",
+          "required": false,
+          "description": "Number of data points to retrieve"
+        }
+      }
+    },
+    {
+      "name": "health_check",
+      "description": "Verify the stock comparison server is operational",
+      "parameters": {}
+    }
+  ],
+  "resources": [
+    {
+      "uri": "stock://health",
+      "name": "Server Health",
+      "description": "Current health status of the server"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/stock-comparison-mcp"
+  },
+  "keywords": [
+    "mcp",
+    "stocks",
+    "finance",
+    "trading",
+    "twelve-data",
+    "stock-analysis",
+    "market-data"
+  ]
+}

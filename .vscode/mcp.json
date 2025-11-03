@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "stock-comparison": {
+      "command": "python3",
+      "args": ["server/server.py"]
+    }
+  }
+}
