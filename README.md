@@ -87,8 +87,8 @@ This MCP server is designed to work seamlessly with VS Code (via GitHub Copilot)
 
 Now you can use natural language in Copilot Chat to analyze stocks:
 ```
-Compare a list of 20 stocks for the last 252 days
-m. Then based on the comparison and analysis pick 10 stocks and run a portfolio optimization using risk parity on the same list of stocks.
+Compare a list of 20 stocks for the past 252 trading days.
+Then, based on the comparison and analysis, select 10 of those stocks and perform a portfolio optimization using the risk parity method.
 ```
 
 ## Cache Configuration
