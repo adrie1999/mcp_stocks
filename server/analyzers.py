@@ -1,10 +1,3 @@
-"""Analysis helpers for comparing stocks.
-
-This module fetches historical data via `data_fetcher` and computes
-returns, volatility, Sharpe-like ratio, correlation matrix and normalized
-price series suitable for plotting.
-"""
-
 from typing import List, Dict, Any, Optional
 from pypfopt.hierarchical_portfolio import HRPOpt
 import numpy as np

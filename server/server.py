@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Stock Comparison MCP Server
-Transformed from Flask REST API to Model Context Protocol
-"""
-
 import asyncio
 import json
 from mcp.server.models import InitializationOptions
