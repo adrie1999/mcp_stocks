@@ -2,3 +2,4 @@
 __pycache__
 config_ollama
 uv.lock
+.venv
