@@ -36,17 +36,10 @@ The server exposes three main tools via the MCP protocol:
 
 ## Setup
 
-1. Create and activate a virtual environment:
-```bash
-python -m venv .venv
-source .venv/bin/activate
+1. install uv:
 ```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-
 3. Create a `.env` file with your TwelveData API key:
 ```
 TWELVE_DATA_API_KEY=your_api_key_here
@@ -74,8 +67,9 @@ This MCP server is designed to work seamlessly with VS Code (via GitHub Copilot)
 {
   "servers": {
     "stock-comparison": {
-      "command": "python3",
-      "args": ["server/server.py"],
+      "command": "uv",
+      "args": ["run","python", "server/server.py"],
+      "cwd": "."
     }
   }
 }
