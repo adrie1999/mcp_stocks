@@ -1,8 +1,9 @@
 {
   "servers": {
     "stock-comparison": {
-      "command": "python3",
-      "args": ["server/server.py"]
+      "command": "uv",
+      "args": ["run","python", "server/server.py"],
+      "cwd": "."
     }
   }
 }
