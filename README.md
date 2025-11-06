@@ -36,12 +36,18 @@ The server exposes three main tools via the MCP protocol:
 
 ## Setup
 
-1. install uv:
+1. Create and activate a virtual environment:
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+python -m venv .venv
+source .venv/bin/activate
 ```
 
-2. Create a `.env` file with your TwelveData API key:
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a `.env` file with your TwelveData API key:
 ```
 TWELVE_DATA_API_KEY=your_api_key_here
 ```
